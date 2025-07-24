@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(114, 72%, 46%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Spotify-inspired colors */
+  --spotify-black: hsl(240, 7%, 7%);
+  --spotify-dark: hsl(240, 7%, 8%);
+  --spotify-gray: hsl(240, 4%, 16%);
+  --spotify-green: hsl(144, 72%, 40%);
+  --spotify-light-gray: hsl(0, 0%, 70%);
+  --spotify-white: hsl(0, 0%, 100%);
+}
+
+.dark {
+  --background: hsl(240, 7%, 7%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 4%, 16%);
+  --muted-foreground: hsl(0, 0%, 70%);
+  --popover: hsl(240, 7%, 8%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 4%, 16%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 4%, 16%);
+  --input: hsl(240, 4%, 16%);
+  --primary: hsl(144, 72%, 40%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(240, 4%, 16%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 4%, 16%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background-color: var(--spotify-black);
+    color: var(--spotify-white);
+  }
+}
+
+@layer utilities {
+  .spotify-bg-black {
+    background-color: var(--spotify-black);
+  }
+  
+  .spotify-bg-dark {
+    background-color: var(--spotify-dark);
+  }
+  
+  .spotify-bg-gray {
+    background-color: var(--spotify-gray);
+  }
+  
+  .spotify-text-green {
+    color: var(--spotify-green);
+  }
+  
+  .spotify-bg-green {
+    background-color: var(--spotify-green);
+  }
+  
+  .spotify-text-light-gray {
+    color: var(--spotify-light-gray);
+  }
+  
+  .spotify-text-white {
+    color: var(--spotify-white);
+  }
+}
